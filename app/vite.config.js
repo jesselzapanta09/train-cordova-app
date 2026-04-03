@@ -4,7 +4,7 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
-  base: './',
+  base: '/train-cordova-app/',
   build: {
     outDir: path.resolve(__dirname, '../cordova/www'),
     emptyOutDir: true,
