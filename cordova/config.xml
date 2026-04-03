@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.trainapp.mobile" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>TrainApp</name>
+    <description>Train Management Mobile Application</description>
+    <author email="dev@trainapp.com" href="http://trainapp.com">TrainApp Dev</author>
+
+    <content src="index.html" />
+
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+
+    <!-- Main App Icon -->
+    <icon src="res/icon.png" />
+
+    <!-- General Preferences -->
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="android-minSdkVersion" value="24" /> <!-- Android 15 requires at least 24+ for modern builds -->
+    <preference name="BackupWebStorage" value="none" />
+
+    <!-- Android 12+ / Android 15 SplashScreen API Settings -->
+    <platform name="android">
+        <!-- 1. Path to your logo (288x288px recommended, keep logo in center 192px circle) -->
+        <preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/screen/android/splash_icon.png" />
+        
+        <!-- 2. The background color behind the logo -->
+        <preference name="AndroidWindowSplashScreenBackground" value="#FFFFFF" />
+        
+        <!-- 3. Duration and Fade settings -->
+        <preference name="SplashScreenDelay" value="3000" />
+        <preference name="FadeSplashScreenDuration" value="300" />
+        
+        <!-- 4. Ensures the splash screen behavior is consistent -->
+        <preference name="AutoHideSplashScreen" value="true" />
+    </platform>
+
+</widget>
