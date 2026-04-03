@@ -56,6 +56,8 @@ cordova run android
 ```bash
 cordova build android
 ```
+
+The apk is available at `cordova\platforms\android\app\build\outputs\apk\debug\app-debug.apk`
 ---
 
 ## Features
