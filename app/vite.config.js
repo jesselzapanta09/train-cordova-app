@@ -4,6 +4,9 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
+  // For Cordova, we need to set the base path to the folder where the app will be served from.
+  // base: './',
+  // for GitHub Pages, we need to set the base path to the repository name.
   base: '/train-cordova-app/',
   build: {
     outDir: path.resolve(__dirname, '../cordova/www'),
